@@ -104,10 +104,11 @@ nav {
 .tablePics {
     padding-top: 15em;
 }
-td{
+
+td {
     padding: 1em;
     cursor: pointer;
-    
+
 }
 
 .contactForm {
@@ -126,7 +127,7 @@ td{
     color: white;
 }
 
-.modal-link a{
+.modal-link a {
     justify-content: flex-start;
     color: white;
     cursor: pointer;

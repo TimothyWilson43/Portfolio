@@ -119,7 +119,7 @@ img.thumbnail1 {
     margin: 0;
 }
 
-        /* Modal Formatting */
+/* Modal Formatting */
 
 .modal-content {
     background-color: rgba(0, 0, 0, .0);
@@ -148,28 +148,11 @@ img.thumbnail1 {
         justify-content: space-around;
     }
 
+    /* Contact Me section */
     .contactForm {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        padding-top: 3em;
     }
-}
 
-@media all and (max-width: 800px) {
-    .sections {
-        display: flex;
-        justify-content: space-around;
+    .form-control {
+        width: 20em;
     }
-}
-
-/* Contact Me section */
-
-.contactForm {
-    padding-top: 3em;
-}
-
-.form-control {
-    width: 35em;
-}
-
-

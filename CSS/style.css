@@ -1,13 +1,10 @@
+/* General Formating */
+
 h1 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     color: white;
-}
-
-.toGallery p {
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
+    padding-left: .5em;
 }
 
 p {
@@ -25,6 +22,33 @@ body {
     margin: 0;
 }
 
+.header,
+.rowTwo,
+.rowThree,
+.rowFour {
+    height: 50em;
+}
+
+.rowTwo {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.rowFour {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.return a {
+    color: white;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 150;
+    display: flex;
+    float: right;
+    padding-right: 20px;
+}
+
+/* First Section -- Splash screen */
+
 nav {
     padding: 1em;
     display: flex;
@@ -41,15 +65,17 @@ nav {
     padding-top: 2em;
 }
 
-.wilsonConcepts p {
-    display: flex;
+.toGallery p {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
+img.wilsonConcepts {
+    width: 50px;
     float: left;
     margin-left: 1em;
     margin-top: 1em;
-}
-
-.header {
-    height: 50em;
 }
 
 .galleryButton a {
@@ -69,19 +95,7 @@ nav {
     transform: translate(-50%, -50%)
 }
 
-.rowTwo,
-.rowThree,
-.rowFour {
-    height: 50em;
-}
-
-.rowTwo {
-    background-color: rgba(0, 0, 0, .6);
-}
-
-.rowFour {
-    background-color: rgba(0, 0, 0, .6);
-}
+/* About me Section */
 
 .aboutMe p {
     color: white;
@@ -89,35 +103,23 @@ nav {
     font-family: 'Quicksand', sans-serif;
     font-weight: 150;
     padding-top: 8em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
-.return a {
-    color: white;
-    font-size: 20px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 150;
+/* Gellery Section formatting */
+
+img.thumbnail1 {
     display: flex;
-    float: right;
-    padding-right: 20px;
-}
-
-.tablePics {
-    padding-top: 15em;
-}
-
-td {
+    width: 300px;
     padding: 1em;
-    cursor: pointer;
-
 }
 
-.contactForm {
-    padding-top: 3em;
+.galleryPics {
+    margin: 0;
 }
 
-.form-control {
-    width: 35em;
-}
+        /* Modal Formatting */
 
 .modal-content {
     background-color: rgba(0, 0, 0, .0);
@@ -137,3 +139,37 @@ td {
     color: white;
     cursor: pointer;
 }
+
+/* Gallery layout for screens below 900 px */
+
+@media (min-width: 900px) {
+    .galleryPics {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contactForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .sections {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* Contact Me section */
+
+.contactForm {
+    padding-top: 3em;
+}
+
+.form-control {
+    width: 35em;
+}
+
+

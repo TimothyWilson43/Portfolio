@@ -16,13 +16,13 @@
 
 <body>
     <div>
-        <div id="Home"></div>
+        <div id="Home" class="sections"></div>
 
         <!-- splash page and main section -->
 
         <div class="header">
-            <div class="wilsonConcepts">
-                <p>Wilson Concepts</p>
+            <div >
+                <img src="Images/Logo.png" alt="Logo" class="wilsonConcepts">
             </div>
             <nav>
                 <div class="Nav1" tabindex="0">
@@ -44,9 +44,11 @@
 
         <!-- About Section -->
 
-        <div id="About">
+        <div id="About" class="sections">
             <div class="rowTwo">
-                <div class="return"><a href="#Home">Top</a></div>
+                <div class="return">
+                    <a href="#Home">Top</a>
+                </div>
                 <h1>About</h1>
                 <center>
                     <div class="aboutMe">
@@ -60,36 +62,36 @@
 
         <!-- Portfolio Section -->
 
-        <div id="Portfolio">
+        <div id="Portfolio" class="sections">
             <div class="rowThree">
                 <div class="return">
                     <a href="#Home">Top</a>
                 </div>
                 <h1>Portfolio</h1>
-                <center class="tablePics">
+                <center>
 
                     <!-- Gallery of Images-->
 
-                    <table>
-                        <tr>
-                            <td class="thumbnail1" data-toggle="modal" data-target="#Modal1">
-                                <img src="Images/Rachels_Site.png" width="300">
-                            </td>
-                            <td class="thumbnail1" data-toggle="modal" data-target="#Modal2">
-                                <img src="Images/web231.jpg" width="300">
-                            </td>
-                            <td class="thumbnail1" data-toggle="modal" data-target="#Modal3">
-                                <img src="Images/web330.jpg" width="300">
-                            </td>
-                            <td class="thumbnail1" data-toggle="modal" data-target="#Modal4">
-                                <img src="Images/4.jpg" width="300">
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="galleryPics">
+                       <div class="galleryContainer">
+                        <div data-toggle="modal" data-target="#Modal1">
+                            <img src="Images/Rachels_Site.png" class="thumbnail1">
+                        </div>
+                        <div data-toggle="modal" data-target="#Modal2">
+                            <img src="Images/web231.jpg" class="thumbnail1">
+                        </div>
+                        <div data-toggle="modal" data-target="#Modal3">
+                            <img src="Images/web330.jpg" class="thumbnail1">
+                        </div>
+                        <div data-toggle="modal" data-target="#Modal4">
+                            <img src="Images/4.jpg" class="thumbnail1">
+                        </div>
+                        </div>
+                    </div>
                 </center>
 
                 <!-- Modal 1-->
-                
+
                 <div class="modal fade bd-example-modal-lg" id="Modal1" tabindex="-1" role="dialog">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
@@ -111,9 +113,9 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Modal 2-->
-                
+
                 <div class="modal fade bd-example-modal-lg" id="Modal2" tabindex="-1" role="dialog">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
@@ -135,9 +137,9 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Modal 3-->
-                
+
                 <div class="modal fade bd-example-modal-lg" id="Modal3" tabindex="-1" role="dialog">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
@@ -159,9 +161,9 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Modal 4-->
-                
+
                 <div class="modal fade bd-example-modal-lg" id="Modal4" tabindex="-1" role="dialog">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
@@ -188,9 +190,11 @@
 
         <!-- Contact Section -->
 
-        <div id="Contact">
+        <div id="Contact" class="sections">
             <div class="rowFour">
-                <div class="return"><a href="#Home">Top</a></div>
+                <div class="return"><a href="#Home">Top</a>
+
+                </div>
                 <h1>Contact</h1>
                 <center>
                     <div class="contactForm">

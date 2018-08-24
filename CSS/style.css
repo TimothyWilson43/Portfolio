@@ -6,6 +6,12 @@ h1 {
     color: white;
     padding-left: .5em;
 }
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin: 0;
+}
 
 p {
     color: white;
@@ -24,11 +30,13 @@ body {
 
 .header,
 .rowTwo,
-.rowThree,
 .rowFour {
     height: 50em;
 }
 
+.rowThree{
+    height: 50em;
+}
 .rowTwo {
     background-color: rgba(0, 0, 0, .6);
 }
@@ -109,10 +117,12 @@ img.wilsonConcepts {
 
 /* Gellery Section formatting */
 
+
 img.thumbnail1 {
     display: flex;
     width: 300px;
-    padding: 1em;
+    height: 155px;
+    padding: .2em;
 }
 
 .galleryPics {
@@ -155,4 +165,12 @@ img.thumbnail1 {
 
     .form-control {
         width: 20em;
+    }
+
+/* Footer */
+    
+    footer{
+        padding-top: 2em;
+        display: flex;
+        justify-content: center;
     }

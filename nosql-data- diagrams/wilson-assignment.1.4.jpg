@@ -1,0 +1,44 @@
+
+
+{ “firstname”: "Dave",
+
+“lastname”: “Wilson”,
+
+“role”: [
+
+  {“type”: “Employee”},
+
+  {“type”: “Manager”},
+
+      ]
+
+}
+
+
+{ “firstname”: "Dave",
+
+“lastname”: “Wilson”,
+
+“birthday”: [
+
+  {“date”: “EJune 5”},
+
+      ]
+
+}
+
+
+
+{ “firstname”: "Dave",
+
+“lastname”: “Wilson”,
+
+“dependents”: [
+
+  {“kid”: “Lydia”},
+
+  {“kid”: “Tripp”},
+
+      ]
+
+}

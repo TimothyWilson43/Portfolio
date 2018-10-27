@@ -174,3 +174,10 @@ img.thumbnail1 {
         display: flex;
         justify-content: center;
     }
+
+/* Diagrams */
+
+    .diagramGallery {
+    padding-top: 2em;
+    padding-left: 2em;
+    }

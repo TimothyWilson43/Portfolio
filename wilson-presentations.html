@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Wilson Concepts">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="author" content="Dave Wilson">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="index.html">
+
+    <title>Wilson Concepts</title>
+
+    <style>
+        button {
+            color: white;
+            background-color: black;
+            margin-top: 4em;
+            margin-left: 2em;
+        }
+
+        .openVideo {
+            font-family: quicksand, sans-serif;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 10%;
+            border: none;
+            text-align: center;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div>
+        <div id="Home" class="sections"></div>
+
+        <!-- splash page and main section -->
+
+        <div class="header">
+            <div>
+                <img src="Images/Logo.png" alt="Logo" class="wilsonConcepts">
+            </div>
+            <nav>
+                <div class="Nav1" tabindex="0">
+                    <a href="index.html">Home</a>
+                </div>
+            </nav>
+            <button class="openVideo">Open Video 1</button>
+                <div class="content">
+                    <video controls autoplay reload="none" style="width:1000px;">
+                        <source src="../Portfolio/Videos/Presentation 1.mp4" type="video/mp4" />
+                    </video> </div>
+            
+
+        </div>
+
+
+        <script>
+            var coll = document.getElementsByClassName("openVideo");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        </script>
+</body>
+
+</html>

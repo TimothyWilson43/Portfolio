@@ -22,7 +22,7 @@ p {
 
 body {
     background: url(CSS-Images/blackbackground.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: 100% 100%;
     height: 100%;
     margin: 0;
@@ -175,9 +175,8 @@ img.thumbnail1 {
         justify-content: center;
     }
 
-/* Diagrams */
-
-    .diagramGallery {
-    padding-top: 2em;
-    padding-left: 2em;
+    .diagramPics{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }

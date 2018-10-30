@@ -177,6 +177,6 @@ img.thumbnail1 {
 
     .diagramPics{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
     }
